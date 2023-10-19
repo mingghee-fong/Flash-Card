@@ -4,7 +4,7 @@ import fsPromises from 'node:fs/promises'
 const testPage = express.Router()
 
 testPage.get('/test', (req, res) => {
-  data
+  res.send('yay')
 })
 
 export default testPage
