@@ -3,8 +3,11 @@ import * as Path from 'node:path'
 
 import express from 'express'
 import hbs from 'express-handlebars'
-import index from './routes/index.js'
+
 import edit from './routes/edit-modify.js'
+import testPage from './routes/test.js'
+import editHub from './routes/edit-hub.js'
+import home from './routes/home.js'
 
 const server = express()
 
@@ -19,11 +22,10 @@ server.set('view engine', 'hbs')
 server.set('views', Path.resolve('server/views'))
 
 // Your routes/router(s) should go here
-server.get('/', (req, res) => {
-  res.send('Hello Bitches')
-})
 
 server.use('/', edit)
-server.use('/', index)
+server.use('/', home)
+server.use('/', testPage)
+server.use('/', editHub)
 
 export default server
