@@ -4,7 +4,7 @@ import * as Path from 'node:path'
 import express from 'express'
 import hbs from 'express-handlebars'
 
-import edit from './routes/edit-modify.js'
+import modify from './routes/add-modify.js'
 import testPage from './routes/test.js'
 import editHub from './routes/edit-hub.js'
 import home from './routes/home.js'
@@ -23,7 +23,7 @@ server.set('views', Path.resolve('server/views'))
 
 // Your routes/router(s) should go here
 
-server.use('/', edit)
+server.use('/', modify)
 server.use('/', home)
 server.use('/', testPage)
 server.use('/', editHub)
