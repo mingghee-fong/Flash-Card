@@ -2,9 +2,13 @@ h1 {
   color: red;
 }
 
+p {
+  /* color: <--- Matt do this  */
+}
+
 .card {
   background-color: blue;
-  width: 80%; 
+  width: 80%;
   height: 100px;
   font-size: 300%;
 }
