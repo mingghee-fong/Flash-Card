@@ -9,6 +9,10 @@ body {
   font-size: 40px;
 }
 
+p {
+  /* color: <--- Matt do this  */
+}
+
 .card {
   background-color: blue;
   width: 80%;
