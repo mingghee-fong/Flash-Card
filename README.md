@@ -1,4 +1,4 @@
-# Boilerplate: Phase 1
+# Flash Card
 
 ## Setup
 
